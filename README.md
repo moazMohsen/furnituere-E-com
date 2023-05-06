@@ -4,7 +4,7 @@
 https://furniturer-e-com.web.app/
 ## tools
 Vanilla JS <br>
-HTNL5<br>
+HTML5<br>
 CSS3<br>
 SASS<br>
 Firebase<br>
