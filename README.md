@@ -1,7 +1,7 @@
 ### Furnituere E-commerce
 ######  
 # Live Demo
-https://vocal-hotteok-e50691.netlify.app/
+[https://vocal-hotteok-e50691.netlify.app/](https://furniturer-e-com.web.app/)
 ## Languages
 Vanilla Js <br>
 Html5<br>
