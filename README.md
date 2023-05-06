@@ -2,7 +2,7 @@
 ######  
 # Live Demo
 https://furniturer-e-com.web.app/
-## Languages
+## tools
 Vanilla JS <br>
 HTNL5<br>
 CSS3<br>
