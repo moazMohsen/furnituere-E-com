@@ -40,26 +40,42 @@ $(document).ready(function () {
     centerPadding: "0rem",
     slidesToShow: 3,
     arrows: false,
-
     responsive: [
+
+      {
+        breakpoint: 426,
+        settings: {
+          centerMode: true,
+          slidesToShow: 1,
+        },
+      },
       {
         breakpoint: 768,
         settings: {
           centerMode: true,
-
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 991,
         settings: {
           centerMode: true,
-
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
+
     ],
+
   });
+});
+
+// mega-nav-togle
+document.querySelector(".mega-nav-togle").addEventListener("click", (e) => {
+  e.stopPropagation();
+  document.querySelector(".sub-mega-nav").classList.toggle('sub-mega-nav-active');
+});
+document.addEventListener("click", (e) => {
+  document.querySelector(".sub-mega-nav").classList.remove('sub-mega-nav-active');
 });
 
 const root = document.querySelector("body");

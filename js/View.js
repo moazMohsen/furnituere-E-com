@@ -1,3 +1,4 @@
+
 export default class View {
   constructor(root, { onCartAdd } = {}) {
     this.root = root;
@@ -108,23 +109,25 @@ export default class View {
         nextArrow: ".right-dep",
         prevArrow: ".left-dep",
 
+
         responsive: [
           {
             breakpoint: 768,
             settings: {
               centerMode: true,
 
-              slidesToShow: 2,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              centerMode: true,
-
               slidesToShow: 1,
             },
           },
+          {
+            breakpoint: 1024,
+            settings: {
+              centerMode: true,
+
+              slidesToShow: 3,
+            },
+          },
+
         ],
       });
     });
@@ -185,29 +188,33 @@ export default class View {
     });
     productBox.innerHTML = productItem;
 
+
     $(document).ready(function () {
+
+
       $(".broduct-box").slick({
         centerMode: true,
         centerPadding: "0rem",
         slidesToShow: 4,
         nextArrow: ".right",
         prevArrow: ".left",
-
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 375,
             settings: {
-              centerMode: true,
-
+              slidesToShow: 1,
+            },
+          },
+          {
+            breakpoint: 426,
+            settings: {
               slidesToShow: 2,
             },
           },
           {
-            breakpoint: 480,
+            breakpoint: 991,
             settings: {
-              centerMode: true,
-
-              slidesToShow: 1,
+              slidesToShow: 3,
             },
           },
         ],
@@ -257,8 +264,8 @@ export default class View {
         <a href="#"> <h1>${pro.name}</h1> </a>
         <div class="broduct-prices">
           <span class="pefore">$${Math.floor(
-            (pro.price / pro.descount) * 100
-          )}</span>
+          (pro.price / pro.descount) * 100
+        )}</span>
           <span class="after">$${pro.price}</span>
         </div>
       </div>
@@ -301,8 +308,8 @@ export default class View {
           <a href="#"> <h1>${pro.name}</h1> </a>
           <div class="broduct-prices">
             <span class="pefore">$${Math.floor(
-              (pro.price / pro.descount) * 100
-            )}</span>
+        (pro.price / pro.descount) * 100
+      )}</span>
             <span class="after">$${pro.price}</span>
           </div>
         </div>
@@ -330,24 +337,22 @@ export default class View {
         centerPadding: "0rem",
         slidesToShow: 3,
         arrows: false,
-
         responsive: [
           {
             breakpoint: 768,
             settings: {
               centerMode: true,
-
-              slidesToShow: 2,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              centerMode: true,
-
               slidesToShow: 1,
             },
           },
+          {
+            breakpoint: 991,
+            settings: {
+              centerMode: true,
+              slidesToShow: 2,
+            },
+          },
+
         ],
       });
       $(".broduct-item-box-top").slick({
@@ -361,18 +366,17 @@ export default class View {
             breakpoint: 768,
             settings: {
               centerMode: true,
-
-              slidesToShow: 2,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              centerMode: true,
-
               slidesToShow: 1,
             },
           },
+          {
+            breakpoint: 991,
+            settings: {
+              centerMode: true,
+              slidesToShow: 2,
+            },
+          },
+
         ],
       });
     });
@@ -421,8 +425,8 @@ export default class View {
           <div class="broduct-prices">
             <span class="pefore">$${pro.price}</span>
             <span class="after">$${Math.floor(
-              (pro.price / pro.descount) * 100
-            )}</span>
+          (pro.price / pro.descount) * 100
+        )}</span>
           </div>
         </div>
         <div class="broduct-control">
@@ -465,8 +469,8 @@ export default class View {
         <div class="broduct-prices">
           <span class="pefore">$${pro.price}</span>
           <span class="after">$${Math.floor(
-            (pro.price / pro.descount) * 100
-          )}</span>
+        (pro.price / pro.descount) * 100
+      )}</span>
         </div>
       </div>
       <div class="broduct-control">
@@ -493,19 +497,24 @@ export default class View {
 
         responsive: [
           {
+            breakpoint: 426,
+            settings: {
+              centerMode: true,
+              slidesToShow: 1,
+            },
+          },
+          {
             breakpoint: 768,
             settings: {
               centerMode: true,
-
               slidesToShow: 2,
             },
           },
           {
-            breakpoint: 480,
+            breakpoint: 991,
             settings: {
               centerMode: true,
-
-              slidesToShow: 1,
+              slidesToShow: 2,
             },
           },
         ],
@@ -518,19 +527,24 @@ export default class View {
 
         responsive: [
           {
+            breakpoint: 426,
+            settings: {
+              centerMode: true,
+              slidesToShow: 1,
+            },
+          },
+          {
             breakpoint: 768,
             settings: {
               centerMode: true,
-
               slidesToShow: 2,
             },
           },
           {
-            breakpoint: 480,
+            breakpoint: 991,
             settings: {
               centerMode: true,
-
-              slidesToShow: 1,
+              slidesToShow: 2,
             },
           },
         ],
@@ -551,7 +565,7 @@ export default class View {
     $(".our-client").slick({
       centerMode: true,
       centerPadding: "0rem",
-      slidesToShow: 5,
+      slidesToShow: 6,
       arrows: false,
 
       responsive: [
@@ -568,7 +582,7 @@ export default class View {
           settings: {
             centerMode: true,
 
-            slidesToShow: 1,
+            slidesToShow: 2,
           },
         },
       ],
@@ -666,50 +680,64 @@ export default class View {
         centerPadding: "0rem",
         slidesToShow: 3,
         arrows: false,
-
         responsive: [
+
+          {
+            breakpoint: 426,
+            settings: {
+              centerMode: true,
+              slidesToShow: 1,
+            },
+          },
           {
             breakpoint: 768,
             settings: {
               centerMode: true,
-
               slidesToShow: 2,
             },
           },
           {
-            breakpoint: 480,
+            breakpoint: 991,
             settings: {
               centerMode: true,
-
-              slidesToShow: 1,
+              slidesToShow: 2,
             },
           },
+
         ],
+
       });
       $(".broduct-item-box-top3").slick({
         centerMode: true,
         centerPadding: "0rem",
         slidesToShow: 3,
         arrows: false,
-
         responsive: [
+
+          {
+            breakpoint: 426,
+            settings: {
+              centerMode: true,
+              slidesToShow: 1,
+            },
+          },
           {
             breakpoint: 768,
             settings: {
               centerMode: true,
-
               slidesToShow: 2,
             },
           },
           {
-            breakpoint: 480,
+            breakpoint: 991,
             settings: {
               centerMode: true,
-
-              slidesToShow: 1,
+              slidesToShow: 2,
             },
           },
+
         ],
+
       });
     });
   };

@@ -1,0 +1,37 @@
+@mixin media-query($breakpoint) {
+  @if $breakpoint== "xs" {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+  @if $breakpoint== "xs-main" {
+    @media (min-width: 321.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint== "xxs" {
+    @media (min-width: 424.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == "sm" {
+    @media (min-width: 767.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == "lg" {
+    @media (min-width: 767.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == "md" {
+    @media (min-width: 991.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == "xl" {
+    @media (min-width: 1399.98px) {
+      @content;
+    }
+  }
+}
