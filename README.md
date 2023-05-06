@@ -3,9 +3,11 @@
 # Live Demo
 https://furniturer-e-com.web.app/
 ## Languages
-Vanilla Js <br>
-Html5<br>
-Css3
+Vanilla JS <br>
+HTNL5<br>
+CSS3<br>
+SASS<br>
+Firebase<br>
 
 
 
@@ -14,5 +16,6 @@ MVC Pattern<br>
 ES6<br>
 OOP<br>
 local storage <br>
-Fontawesome Icon
-slick js
+Fontawesome Icon<br>
+slick js<br>
+responsive<br>
